@@ -15,24 +15,18 @@ import {Subscription} from "rxjs";
           <thead class="bg-gray-50">
           <tr>
             <th scope="col" class="table-header">
-              #
-            </th>
-            <th scope="col" class="table-header">
               Id
             </th>
             <th scope="col" class="table-header">
-              Name
+              Teacher Name
             </th>
           </tr>
           </thead>
           <tbody class="bg-white divide-y divide-gray-200">
             <ng-container *ngIf="pagedTeachers.length > 0; else noData">
               <tr *ngFor="let teacher of pagedTeachers; let i = index">
-                <td class="px-6 py-4 whitespace-nowrap bg-sky-400">
-                  {{ pageSize*(currentPage-1) + i + 1 }}
-                </td>
-                <td class="px-6 py-4 whitespace-nowrap">
-                  {{ teacher.id }} <!-- Assuming teacher.id exists in TeacherDto -->
+                <td class="px-6 py-4  bg-sky-400">
+                  {{ teacher.id }}
                 </td>
                 <td class="px-6 py-4 whitespace-nowrap">
                   {{ teacher.name }}
