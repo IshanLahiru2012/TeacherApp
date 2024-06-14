@@ -1,5 +1,4 @@
 
-
 .containers{
   display: flex;
   flex-direction: column;
@@ -21,12 +20,13 @@
 .background-container {
   flex: 1;
   background-image: url('/assets/bg.jpg');
-  background-size: cover; /* Cover the entire container */
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Prevent the image from repeating */
-  width: 100%; /* Ensure the container takes the full width */
-  display: flex; /* Use flexbox to align content */
-  align-items: center; /* Center content vertically */
-  justify-content: center; /* Center content horizontally */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
   opacity: 40%;
 }

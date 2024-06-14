@@ -1,0 +1,10 @@
+.table-header {
+  padding: 0.75rem 1.5rem;
+  text-align: left;
+  font-size: 0.75rem; /* text-xs in Tailwind */
+  font-weight: 500; /* font-medium in Tailwind */
+  color: #6b7280; /* text-gray-500 in Tailwind */
+  text-transform: uppercase;
+  letter-spacing: 0.05em; /* tracking-wider in Tailwind */
+  background-color: #17b6f6;
+}
