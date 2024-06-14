@@ -1,10 +1,26 @@
 .table-header {
   padding: 0.75rem 1.5rem;
-  text-align: left;
-  font-size: 0.75rem; /* text-xs in Tailwind */
-  font-weight: 500; /* font-medium in Tailwind */
-  color: #6b7280; /* text-gray-500 in Tailwind */
+  text-align: center;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #6b7280;
   text-transform: uppercase;
-  letter-spacing: 0.05em; /* tracking-wider in Tailwind */
+  letter-spacing: 0.05em;
   background-color: #17b6f6;
+}
+table {
+  table-layout: fixed;
+  width: 100%;
+}
+.table-container {
+  overflow-x: auto;
+  max-width: 100%;
+}
+td {
+  overflow: auto;
+}
+
+.id-column {
+  width: 100px;
+  min-width: 100px;
 }
