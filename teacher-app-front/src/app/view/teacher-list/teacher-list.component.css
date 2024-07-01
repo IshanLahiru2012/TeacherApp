@@ -19,6 +19,9 @@ table {
 td {
   overflow: auto;
 }
+th {
+  border-right: 1px solid #ddd;
+}
 
 .id-column {
   width: 100px;

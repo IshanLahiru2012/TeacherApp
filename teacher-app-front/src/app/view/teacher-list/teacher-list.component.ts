@@ -36,7 +36,7 @@ import {Subscription} from "rxjs";
           </ng-container>
           <ng-template #noData>
             <tr>
-              <td colspan="3" class="px-6 py-4 text-center text-gray-500">No data available</td>
+              <td colspan="2" class="px-6 py-4 text-center text-gray-500">No data available</td>
             </tr>
           </ng-template>
           </tbody>
@@ -67,7 +67,6 @@ export class TeacherListComponent implements OnInit, OnDestroy{
   pagedTeachers: TeacherDto[] = [];
   currentPage: number = 1;
   pageSize: number = 10;
-  count : number=0;
   private teacherAddedSubscription!: Subscription;
 
   constructor(private teacherService: TeacherService) { }
